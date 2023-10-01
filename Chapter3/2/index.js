@@ -34,7 +34,7 @@ app.get('/posts', (req, res) => {
             posts.push(`Post ${i+1}`);
         }
     }
-    res.render('posts.pug', { posts });
+    res.render('posts.pug', { posts }); // 링크에 http://127.0.0.1:3000/posts?until=8 작성
 });
 
 app.listen(port, () => console.log(`server listening on port ${port}`));
